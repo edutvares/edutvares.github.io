@@ -17,8 +17,8 @@ export const Container = styled.a`
     linear-gradient(
       110.09deg,
       rgba(39, 39, 39, 0.38) 0%,
-      #272727 70.83%,
-      #c00000 70.84%
+      ${(props) => props.secundaryColor} 70.83%,
+      ${(props) => props.primaryColor} 70.84%
     );
 
   background-size: contain;
@@ -35,6 +35,7 @@ export const Container = styled.a`
 
   ${media.lessThan("small")`
     flex-direction: column;
+    border-radius: 10px;
 
     img {
       width: 90%;

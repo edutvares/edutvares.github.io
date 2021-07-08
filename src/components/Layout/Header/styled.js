@@ -6,7 +6,7 @@ export const Container = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 2;
 
   background: var(--transparent-primary-color);
   backdrop-filter: blur(10px);

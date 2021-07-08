@@ -1,10 +1,30 @@
+import { useEffect, useRef } from "react";
 import * as S from "./styled";
 import profileImage from "./images/profile.png";
 import { ReactLogo } from "@styled-icons/fa-brands/ReactLogo";
 import { InstagramSquare } from "@styled-icons/fa-brands/InstagramSquare";
 import marker from "./images/marker.svg";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const AboutMe = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const reactLogoRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(reactLogoRef.current, {
+      scrollTrigger: {
+        trigger: reactLogoRef.current,
+        scrub: 1,
+      },
+      y: -500,
+      rotation: 90,
+      transformOrigin: "50% 50%",
+    });
+  }, []);
+
   return (
     <S.Container>
       <S.Wrapper>
@@ -28,7 +48,7 @@ const AboutMe = () => {
         </S.TextSection>
         <S.ImageSection>
           <img src={profileImage} />
-          <S.RotatingImage>
+          <S.RotatingImage ref={reactLogoRef}>
             <ReactLogo />
           </S.RotatingImage>
         </S.ImageSection>

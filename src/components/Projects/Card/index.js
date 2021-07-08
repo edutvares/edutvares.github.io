@@ -4,16 +4,18 @@ import { Html5 } from "@styled-icons/fa-brands/Html5";
 import { Css3Alt } from "@styled-icons/fa-brands/Css3Alt";
 import { Js } from "@styled-icons/fa-brands/Js";
 
-import logoCross from "../images/cross-logo.png";
-import siteImage from "../images/cross.png";
-
-const Card = () => {
+const Card = ({ data }) => {
   return (
-    <S.Container href="#" backgroundLogo={logoCross}>
+    <S.Container
+      href="#"
+      backgroundLogo={data.logo}
+      primaryColor={data.primaryColor}
+      secundaryColor={data.secundaryColor}
+    >
       <S.TextSection>
         <S.Text>
-          <h2>CROSS Projetos</h2>
-          <p>Projetado e desenvolvido na QRV</p>
+          <h2>{data.title}</h2>
+          <p>{data.description}</p>
         </S.Text>
         <S.Icons>
           <li>
@@ -27,7 +29,7 @@ const Card = () => {
           </li>
         </S.Icons>
       </S.TextSection>
-      <img src={siteImage} />
+      <img src={data.frame} />
     </S.Container>
   );
 };
