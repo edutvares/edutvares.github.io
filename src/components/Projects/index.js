@@ -15,7 +15,7 @@ const Projects = () => {
   useEffect(() => {
     const cardsRef = [...projectsRef.current.children];
     cardsRef.map((project) => {
-      gsap.from(project, {
+      return gsap.from(project, {
         scrollTrigger: project,
         y: 100,
         opacity: 0,

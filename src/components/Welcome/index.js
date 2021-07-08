@@ -7,7 +7,7 @@ const Welcome = () => {
     <>
       <S.Container backgroundImage={backgroundImage}>
         <S.Wrapper>
-          <img src={arrowImage} />
+          <img src={arrowImage} alt="icone de seta para baixo" />
 
           <S.Text>
             Olá<span>,</span>

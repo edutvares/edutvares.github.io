@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyle from "./styles/global";
 import Layout from "./components/Layout";
 import IndexPage from "./pages/index";

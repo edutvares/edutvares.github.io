@@ -4,6 +4,7 @@ import media from "styled-media-query";
 export const Container = styled.a`
   width: 100%;
   margin-top: 40px;
+  overflow: hidden;
 
   border-radius: 30px;
 
@@ -12,14 +13,6 @@ export const Container = styled.a`
 
   color: var(--secundary-color);
   text-decoration: none;
-
-  background: url("${(props) => props.backgroundLogo}") no-repeat center,
-    linear-gradient(
-      110.09deg,
-      rgba(39, 39, 39, 0.38) 0%,
-      ${(props) => props.secundaryColor} 70.83%,
-      ${(props) => props.primaryColor} 70.84%
-    );
 
   background-size: contain;
 

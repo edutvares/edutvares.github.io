@@ -40,14 +40,14 @@ const AboutMe = () => {
             a forma das pessoas verem a web.
           </p>
           <S.SocialLinks>
-            <img src={marker} />
-            <a href="#">
+            <img src={marker} alt="icone react" />
+            <a href="https://www.instagram.com/edu_tvares/">
               <InstagramSquare size="40" />
             </a>
           </S.SocialLinks>
         </S.TextSection>
         <S.ImageSection>
-          <img src={profileImage} />
+          <img src={profileImage} alt="Foto de perfil" />
           <S.RotatingImage ref={reactLogoRef}>
             <ReactLogo />
           </S.RotatingImage>
