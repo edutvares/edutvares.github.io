@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Container = styled.div`
   display: flex;
@@ -12,6 +13,11 @@ export const Eye = styled.div`
   border-radius: 50%;
   background: var(--secundary-color);
   position: relative;
+
+  ${media.lessThan("medium")`
+    width: 100px;
+    height: 100px;
+  `}
 
   &::before {
     content: "";

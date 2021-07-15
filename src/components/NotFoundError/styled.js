@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
 
   text-align: center;
-  font-size: 3em;
+  font-size: clamp(1.5rem, 3vw, 4rem);
 
   span,
   a {
