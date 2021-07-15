@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyle from "./styles/global";
 import Layout from "./components/Layout";
 import IndexPage from "./pages/index";
+import NotFoundPage from "./pages/404";
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={IndexPage} />
-          <Route path="*">
-            <h2>Deu errado aqui</h2>
-          </Route>
+          <Route path="*" component={NotFoundPage} />
         </Switch>
       </Layout>
       <GlobalStyle />

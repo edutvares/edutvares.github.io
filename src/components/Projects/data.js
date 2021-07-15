@@ -12,6 +12,7 @@ const data = [
     logo: crossLogo,
     primaryColor: "#c00000",
     secundaryColor: "#272727",
+    href: "https://crossprojetos.com.br/",
   },
   {
     title: "Paulinho imóveis",
@@ -20,6 +21,7 @@ const data = [
     logo: paulinhoImoveisLogo,
     primaryColor: "#fff",
     secundaryColor: "#1C66D8",
+    href: "https://alugarimoveisemperuibe.com.br/",
   },
 ];
 

@@ -40,7 +40,7 @@ const Card = ({ data }) => {
 
   return (
     <S.Container
-      href="#"
+      href={data.href}
       ref={cardRef}
       onMouseEnter={() => hoverAnimation.play()}
       onMouseLeave={() => hoverAnimation.reverse()}
