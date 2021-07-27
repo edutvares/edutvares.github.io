@@ -41,8 +41,11 @@ const AboutMe = () => {
           </p>
           <S.SocialLinks>
             <img src={marker} alt="icone react" />
-            <a href="https://www.instagram.com/edu_tvares/">
-              <InstagramSquare size="40" alt="Link para perfil do instagram" />
+            <a
+              href="https://www.instagram.com/edu_tvares/"
+              aria-label="Ver perfil do instagram"
+            >
+              <InstagramSquare size="40" />
             </a>
           </S.SocialLinks>
         </S.TextSection>
